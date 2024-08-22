@@ -1,0 +1,61 @@
+nav {
+  ul {
+    @include flexContainer;
+    gap: 40px;
+    list-style: none;
+
+    #language {
+      background: $navbarLanguage;
+      padding: 5px;
+      border-radius: 10px;
+
+      &:hover {
+        color: red;
+      }
+    }
+
+    li {
+      @keyframes barSlideIn {
+        0% {
+          transform: translateX(-50%) scale(0);
+        }
+        100% {
+          transform: translateX(-50%) scale(1);
+        }
+      }
+
+      @keyframes barSlideOut {
+        0% {
+          transform: translateX(-50%) scale(1);
+        }
+        100% {
+          transform: translateX(-50%) scale(0);
+        }
+      }
+
+      position: relative;
+      cursor: pointer;
+      font-size: 1.1rem;
+
+      &:hover {
+        color: $navbarColor;
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        background: $navbarColor;
+        height: 1.5px;
+        width: 100%;
+        top: -60%;
+        left: 50%;
+        transform: translateX(-50%) scale(0);
+        animation: barSlideOut 0.3s ease-out forwards;
+      }
+
+      &:hover::after {
+        animation: barSlideIn 0.3s ease-out forwards;
+      }
+    }
+  }
+}

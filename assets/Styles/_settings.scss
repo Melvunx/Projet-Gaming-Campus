@@ -1,0 +1,8 @@
+$navbarColor: #743CB1;
+$navbarLanguage:rgb(203,196,191);
+
+@mixin flexContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
