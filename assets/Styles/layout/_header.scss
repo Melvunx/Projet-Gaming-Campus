@@ -1,0 +1,28 @@
+header {
+  .main-header {
+    @include flexContainer;
+    flex-direction: column;
+    width: 100%;
+    padding: 45px;
+    background: url(../img/bg.jpg) center/cover;
+    background-attachment: fixed;
+
+h1 {
+  font-family: "Montserrat Medium";
+  color: white;
+}
+
+  }
+}
+
+.header-text {
+  @include flexContainer;
+  
+  p {
+    text-align: center;
+    width: 60%;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: black;
+  }
+}
