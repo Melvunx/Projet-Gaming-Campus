@@ -3,7 +3,7 @@ header {
     @include flexContainer;
     flex-direction: column;
     width: 100%;
-    padding: 45px;
+    padding: 45px 0;
     background: url(../img/bg.jpg) center/cover;
     background-attachment: fixed;
 
@@ -17,6 +17,7 @@ h1 {
 
 .header-text {
   @include flexContainer;
+  padding: 25px 0px;
   
   p {
     text-align: center;
