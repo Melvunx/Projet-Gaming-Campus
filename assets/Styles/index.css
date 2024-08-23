@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: "Montserrat Medium";
   src: url(../fonts/Montserrat-Medium.ttf);
@@ -88,7 +89,7 @@ nav ul li::after {
   content: "";
   position: absolute;
   background: #743CB1;
-  height: 1.5px;
+  height: 2px;
   width: 100%;
   top: -60%;
   left: 50%;
@@ -124,6 +125,7 @@ header .main-header {
 header .main-header h1 {
   font-family: "Montserrat Medium";
   color: white;
+  text-transform: uppercase;
 }
 
 .header-text {
@@ -183,4 +185,32 @@ header .main-header h1 {
   font-family: "Montserrat Thin";
   font-weight: bold;
   font-size: 1.1rem;
+}
+
+button {
+  border: 1px solid white;
+  background: none;
+  color: white;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  padding: 10px 25px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+button:hover {
+  color: black;
+  background-color: white;
+}
+
+.main-header button {
+  font-size: 1.3rem;
+  padding: 10px 35px;
+  letter-spacing: 5px;
+  position: relative;
+}
+.main-header button::after {
+  content: "❯";
+  position: absolute;
+  top: 13%;
+  left: 95%;
 }/*# sourceMappingURL=index.css.map */
