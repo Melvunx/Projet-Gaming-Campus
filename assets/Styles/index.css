@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @font-face {
   font-family: "Montserrat Medium";
   src: url(../fonts/Montserrat-Medium.ttf);
@@ -83,12 +82,12 @@ nav ul li {
   }
 }
 nav ul li:hover {
-  color: #743CB1;
+  color: #743cb1;
 }
 nav ul li::after {
   content: "";
   position: absolute;
-  background: #743CB1;
+  background: #743cb1;
   height: 2px;
   width: 100%;
   top: -60%;
@@ -148,6 +147,90 @@ header .main-header h1 {
   color: black;
 }
 
+.contact .contact-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 25px 0;
+  gap: 20px;
+  position: relative;
+}
+.contact .contact-container::after {
+  content: "";
+  position: absolute;
+  height: 1px;
+  background-color: rgb(205, 203, 203);
+  bottom: 135px;
+  width: 50%;
+}
+.contact .contact-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 20px;
+}
+.contact .list {
+  width: 18%;
+}
+.contact .list:first-child {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.contact .list h5 {
+  font-size: 1.2rem;
+  text-align: left;
+  text-transform: uppercase;
+}
+.contact .list .network {
+  margin: 15px 0 5px 0;
+}
+.contact .list h6 {
+  font-size: 0.9rem;
+  margin: 8px 0;
+}
+.contact .list .infos-p {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 10px;
+  padding: 0;
+}
+.contact .list .infos-p li {
+  font-weight: bold;
+}
+.contact .list .footer-logos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 5px;
+  margin-bottom: 50px;
+}
+
 .icon-part .icon-part-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -187,15 +270,96 @@ header .main-header h1 {
   font-size: 1.1rem;
 }
 
+h2, p {
+  margin: 0;
+}
+
+.news-part {
+  background: rgb(247, 247, 247);
+  padding: 75px 0;
+}
+.news-part .header-news {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+.news-part .header-news .left-part {
+  grid-area: lp;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.news-part .header-news .left-part h2 {
+  font-family: "Montserrat Thin";
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.news-part .header-news .right-part {
+  grid-area: rp;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+.news-part .main-news .main-news-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  max-width: 1100px;
+  margin: 45px auto;
+}
+.news-part .main-news .main-news-container > div {
+  position: relative;
+  width: 23%;
+}
+.news-part .main-news .main-news-container .mn-pic img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  -webkit-box-shadow: rgb(20, 20, 20) 0 2px 10px;
+          box-shadow: rgb(20, 20, 20) 0 2px 10px;
+}
+.news-part .main-news .main-news-container h4 {
+  margin: 15px 0;
+  text-align: left;
+}
+.news-part .main-news .main-news-container p {
+  text-align: left;
+  font-size: 0.9rem;
+  line-height: 23px;
+}
+.news-part .main-news .main-news-container .link {
+  position: absolute;
+  text-align: left;
+  bottom: -40px;
+}
+
+button,
+a {
+  position: relative;
+}
+
 button {
   border: 1px solid white;
   background: none;
   color: white;
+  font-weight: 600;
   text-transform: uppercase;
   font-size: 1.2rem;
   padding: 10px 25px;
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 button:hover {
   color: black;
@@ -206,11 +370,25 @@ button:hover {
   font-size: 1.3rem;
   padding: 10px 35px;
   letter-spacing: 5px;
-  position: relative;
 }
-.main-header button::after {
-  content: "❯";
-  position: absolute;
-  top: 13%;
-  left: 95%;
+
+.right-part button {
+  border: 2px solid black;
+  color: black;
+  padding: 10px 30px;
+}
+.right-part button:hover {
+  border: 2px solid transparent;
+  background: rgb(20, 20, 20);
+  color: white;
+}
+
+a {
+  text-decoration: none;
+}
+a:hover {
+  color: turquoise;
+}
+a:active {
+  color: crimson;
 }/*# sourceMappingURL=index.css.map */

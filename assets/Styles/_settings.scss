@@ -1,6 +1,11 @@
-$bgColor: rgb(20,20,20);
-$navbarColor: #743CB1;
-$navbarLanguage:rgb(203,196,191);
+$bgColor: rgb(20, 20, 20);
+$bgColorSection: rgb(247,247,247);
+$navbarColor: #743cb1;
+$navbarLanguage: rgb(203, 196, 191);
+$linkVisited: rgb(247,149,38);
+$linkHover: turquoise;
+$linkActive: crimson;
+
 
 @mixin flexContainer {
   display: flex;
@@ -9,18 +14,14 @@ $navbarLanguage:rgb(203,196,191);
 }
 
 @font-face {
-  font-family:"Montserrat Medium" ;
+  font-family: "Montserrat Medium";
   src: url(../fonts/Montserrat-Medium.ttf);
 }
 
 @font-face {
-  font-family: "Montserrat Thin" ;
+  font-family: "Montserrat Thin";
   src: url(../fonts/Montserrat-Thin.ttf);
 }
-
-
-
-
 
 body {
   margin: 0;
