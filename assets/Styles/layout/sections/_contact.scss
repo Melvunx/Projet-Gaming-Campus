@@ -11,7 +11,7 @@
       position: absolute;
       height: 1px;
       background-color: rgb(205, 203, 203);
-      bottom: 135px;
+      bottom: 115px;
       width: 50%;
   
     }
@@ -21,12 +21,12 @@
   .contact-list {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 40px;
   }
   
 
   .list {
-    width: 18%;
+    width: 13%;
 
     &:first-child {
       @include flexContainer;
@@ -64,6 +64,29 @@
       display: flex;
       gap: 5px;
       margin-bottom: 50px;
+    }
+  }
+
+  .contact-medias {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    align-items: center;
+    grid-gap: 6rem;
+
+    .medias-text {
+      h3 {
+        text-transform: uppercase;
+      }
+
+      p {
+        font-weight: bold;
+        font-size: 1.1rem;
+      }
+    }
+
+    .medias-logos {
+      display: flex;
+      gap: 20px;
     }
   }
 }
