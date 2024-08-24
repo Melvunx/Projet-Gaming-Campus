@@ -146,6 +146,11 @@ header .main-header h1 {
   color: black;
 }
 
+@media screen and (max-width: 1000px) {
+  .main-header h1 {
+    font-size: 1.2rem;
+  }
+}
 footer {
   background: black;
   padding-top: 1px;
@@ -437,4 +442,22 @@ a:hover {
 }
 a:active {
   color: crimson;
+}
+
+@media screen and (max-width: 1160px) {
+  nav {
+    display: none;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .main-header h1 {
+    font-size: 1.3rem;
+  }
+  .main-header button {
+    font-size: 0.9rem;
+  }
+  .header-text p {
+    line-height: 25px;
+    font-size: 0.8rem;
+  }
 }/*# sourceMappingURL=index.css.map */

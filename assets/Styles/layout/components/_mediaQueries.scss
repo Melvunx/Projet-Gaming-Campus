@@ -1,0 +1,24 @@
+@media screen  and (max-width: 1160px) {
+  nav{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .main-header {
+    h1 {
+      font-size: 1.3rem;
+    }
+
+    button {
+      font-size: 0.9rem;
+    }
+  }
+
+  .header-text {
+    p {
+      line-height: 25px;
+      font-size: 0.8rem;
+    }
+  }
+}
