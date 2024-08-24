@@ -3,8 +3,6 @@ h2, p {
 }
 
 .news-part {
-  // @include flexContainer;
-  // flex-direction: column;
   background: $bgColorSection;
   padding: 75px 0;
   
@@ -54,6 +52,7 @@ h2, p {
           object-fit: cover;
           width: 100%;
           box-shadow: $bgColor 0 2px 10px;
+          border-radius: 3px;
         }
       }
 

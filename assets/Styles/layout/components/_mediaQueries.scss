@@ -1,6 +1,51 @@
+@media screen and (max-width: 1310px) {
+  .contact {
+    display: none;
+  }
+}
+
+
+@media screen and (max-width: 1210px) {
+  .list-icon-part {
+    button {
+      font-size: 0.7rem;
+    }
+  }
+}
+
+
 @media screen  and (max-width: 1160px) {
   nav{
     display: none;
+  }
+
+  .icon-part {
+    .icon-part-container {
+      .list-icon-part {
+        p {
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  footer {
+    overflow: hidden;
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 5px;
+
+      li {
+        @include flexContainer;
+        width: 20%;
+        img {
+         width: 30%; 
+        }
+      }
+    }
   }
 }
 
@@ -21,4 +66,89 @@
       font-size: 0.8rem;
     }
   }
+
+  .icon-part {
+    .icon-part-container {
+      h3 {
+        text-align: center;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 810px) {
+  .icon-part {
+    .icon-part-container {
+      @include flexContainer;
+      flex-direction: column;
+      gap: none;
+      
+      h3 {
+        text-align: center;
+      }
+      
+      .list-icon-part {
+        max-width: 90%;
+        
+        p {
+          font-size: 0.9rem;
+        }
+      }
+  
+    }
+  }
+
+  .news-part {
+    .header-news {
+      @include flexContainer;
+      flex-direction: column;
+      gap: 20px;
+
+      .left-part {
+        h2 {
+          text-align: center;
+          margin-bottom: 5px;
+        }
+      }
+
+      .right-part {
+        button {
+          font-size: 0.9rem;
+        }
+      }
+    }
+
+    .main-news {
+      .main-news-container {
+        @include flexContainer;
+        flex-direction: column;
+        gap: 15px;
+
+        & > div {
+          width: 90%;
+
+        }
+
+        .mn-pic {
+          @include flexContainer;
+          img {
+            width: 35%;
+          }
+        }
+
+        .link {
+          position: initial;
+          text-align: left;
+        }
+
+        p {
+          font-size: 0.8rem;
+          margin-bottom: 10px;
+        }
+      }
+    }
+
+  }
+
+
 }

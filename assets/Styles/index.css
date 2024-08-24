@@ -153,7 +153,7 @@ header .main-header h1 {
 }
 footer {
   background: black;
-  padding-top: 1px;
+  padding: 5px 0;
 }
 footer h3 {
   color: white;
@@ -380,6 +380,7 @@ h2, p {
   width: 100%;
   -webkit-box-shadow: rgb(20, 20, 20) 0 2px 10px;
           box-shadow: rgb(20, 20, 20) 0 2px 10px;
+  border-radius: 3px;
 }
 .news-part .main-news .main-news-container h4 {
   margin: 15px 0;
@@ -411,6 +412,7 @@ button {
   padding: 10px 25px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+  cursor: pointer;
 }
 button:hover {
   color: black;
@@ -444,9 +446,50 @@ a:active {
   color: crimson;
 }
 
+@media screen and (max-width: 1310px) {
+  .contact {
+    display: none;
+  }
+}
+@media screen and (max-width: 1210px) {
+  .list-icon-part button {
+    font-size: 0.7rem;
+  }
+}
 @media screen and (max-width: 1160px) {
   nav {
     display: none;
+  }
+  .icon-part .icon-part-container .list-icon-part p {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 1050px) {
+  footer {
+    overflow: hidden;
+  }
+  footer ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 5px;
+  }
+  footer ul li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 20%;
+  }
+  footer ul li img {
+    width: 30%;
   }
 }
 @media screen and (max-width: 1000px) {
@@ -459,5 +502,99 @@ a:active {
   .header-text p {
     line-height: 25px;
     font-size: 0.8rem;
+  }
+  .icon-part .icon-part-container h3 {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 810px) {
+  .icon-part .icon-part-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: none;
+  }
+  .icon-part .icon-part-container h3 {
+    text-align: center;
+  }
+  .icon-part .icon-part-container .list-icon-part {
+    max-width: 90%;
+  }
+  .icon-part .icon-part-container .list-icon-part p {
+    font-size: 0.9rem;
+  }
+  .news-part .header-news {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 20px;
+  }
+  .news-part .header-news .left-part h2 {
+    text-align: center;
+    margin-bottom: 5px;
+  }
+  .news-part .header-news .right-part button {
+    font-size: 0.9rem;
+  }
+  .news-part .main-news .main-news-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 15px;
+  }
+  .news-part .main-news .main-news-container > div {
+    width: 90%;
+  }
+  .news-part .main-news .main-news-container .mn-pic {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .news-part .main-news .main-news-container .mn-pic img {
+    width: 35%;
+  }
+  .news-part .main-news .main-news-container .link {
+    position: initial;
+    text-align: left;
+  }
+  .news-part .main-news .main-news-container p {
+    font-size: 0.8rem;
+    margin-bottom: 10px;
   }
 }/*# sourceMappingURL=index.css.map */
