@@ -71,7 +71,8 @@
     display: grid;
     grid-template-columns: 30% 70%;
     align-items: center;
-    grid-gap: 6rem;
+    justify-items: center;
+    grid-gap: 5rem;
 
     .medias-text {
       h3 {
@@ -86,7 +87,7 @@
 
     .medias-logos {
       display: flex;
-      gap: 20px;
+      gap: 30px;
     }
   }
 }

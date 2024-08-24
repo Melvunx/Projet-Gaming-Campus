@@ -1,0 +1,18 @@
+footer {
+  background: black;
+  padding-top: 1px;
+  
+  h3 {
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  ul {
+    list-style: none;
+    @include flexContainer;
+    padding: 0;
+    margin: 0;
+    gap: 25px;
+  }
+}

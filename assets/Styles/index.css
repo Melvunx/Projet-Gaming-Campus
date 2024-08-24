@@ -117,9 +117,8 @@ header .main-header {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 100%;
-  padding: 45px 0;
-  background: url(../img/bg.jpg) center/cover;
-  background-attachment: fixed;
+  padding: 90px 0;
+  background: url(../img/bg.jpg) fixed center/cover;
 }
 header .main-header h1 {
   font-family: "Montserrat Medium";
@@ -137,7 +136,7 @@ header .main-header h1 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 25px 0px;
+  padding: 50px 0px;
 }
 .header-text p {
   text-align: center;
@@ -145,6 +144,31 @@ header .main-header h1 {
   font-size: 1.2rem;
   font-weight: 700;
   color: black;
+}
+
+footer {
+  background: black;
+  padding-top: 1px;
+}
+footer h3 {
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+}
+footer ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0;
+  margin: 0;
+  gap: 25px;
 }
 
 .contact .contact-container {
@@ -236,7 +260,8 @@ header .main-header h1 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  grid-gap: 6rem;
+  justify-items: center;
+  grid-gap: 5rem;
 }
 .contact .contact-medias .medias-text h3 {
   text-transform: uppercase;
@@ -249,7 +274,7 @@ header .main-header h1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 20px;
+  gap: 30px;
 }
 
 .icon-part .icon-part-container {
